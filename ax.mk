@@ -13,9 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+$(call inherit-product, vendor/ax/config/gsm.mk)
+
+# Inherit some common AX stuff.
+$(call inherit-product, vendor/ax/config/common_full_phone.mk)
+
 $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 
-PRODUCT_NAME := aosp_hammerhead
+PRODUCT_NAME := ax_hammerhead
 
 PRODUCT_PACKAGES += \
     Launcher3
