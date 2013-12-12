@@ -75,21 +75,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
-# These are the missing vendor files
-PRODUCT_COPY_FILES += \
-		device/lge/hammerhead/prebuilt/vendor/lib/libDxHdcp.so:system/vendor/lib/libDxHdcp.so \
-		device/lge/hammerhead/prebuilt/vendor/lib/libfrsdk.so:system/vendor/lib/libfrsdk.so \
-		device/lge/hammerhead/prebuilt/vendor/lib/libvdmengine.so:system/vendor/lib/libvdmengine.so \
-		device/lge/hammerhead/prebuilt/vendor/lib/libvdmfumo.so:system/vendor/lib/libvdmfumo.so \
-		device/lge/hammerhead/prebuilt/vendor/lib/libvss_common_core.so:system/vendor/lib/libvss_common_core.so \
-		device/lge/hammerhead/prebuilt/vendor/lib/libvss_common_idl.so:system/vendor/lib/libvss_common_idl.so \
-		device/lge/hammerhead/prebuilt/vendor/lib/libvss_common_iface.so:system/vendor/lib/libvss_common_iface.so \
-		device/lge/hammerhead/prebuilt/vendor/lib/libvss_nv_core.so:system/vendor/lib/libvss_nv_core.so \
-		device/lge/hammerhead/prebuilt/vendor/lib/libvss_nv_idl.so:system/vendor/lib/libvss_nv_idl.so \
-		device/lge/hammerhead/prebuilt/vendor/lib/libvss_nv_iface.so:system/vendor/lib/libvss_nv_iface.so \
-		device/lge/hammerhead/prebuilt/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
-		device/lge/hammerhead/prebuilt/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so
-
 # For GPS
 PRODUCT_COPY_FILES += \
     device/lge/hammerhead/sec_config:system/etc/sec_config
