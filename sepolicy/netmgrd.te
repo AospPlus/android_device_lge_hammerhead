@@ -5,10 +5,11 @@ type netmgrd_exec, exec_type, file_type;
 # Started by init
 init_daemon_domain(netmgrd)
 
-permissive_or_unconfined(netmgrd)
-
 # Starts as (root,radio) changes to (radio,radio)
 allow netmgrd self:capability { setuid setgid net_admin net_raw };
+
+# Triggers a sys_module denial, but kernel has CONFIG_MODULES=n.
+dontaudit netmgrd self:capability sys_module;
 
 allow netmgrd self:udp_socket { create ioctl };
 allow netmgrd self:netlink_socket create_socket_perms;
